@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Definitions of arguments that you can pass this launch file, for example paused:=true -->
+  <arg name="world_name" value="/home/saki/catkin_ws/src/raspimouse_sim/raspimouse_gazebo.world"/>
+  <arg name="paused" default="false" />
+  <arg name="use_sim_time" default="true" />
+  <arg name="gui" default="true" />
+  <arg name="headless" default="false" />
+  <arg name="debug" default="false" />
+  <arg name="urg" default="true" />
+  <arg name="lidar_frame" default="laser" />
+  <arg name="use_devfile" default="false" />
+  <arg name="x0" default="0" />
+  <arg name="y0" default="0" />
+  <arg name="z0" default="0.01" />
+
+  <!-- Load the Gazebo simulator with specified world file -->
+  <include file="$(find finalrobot2_1100452_description)/launch/final.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+  <!-- Load the URDF file for the robot -->
+  <param name="finalrobot2_1100452_description" command="$(find xacro)/xacro '$(find finalrobot2_1100452_description)/urdf/finalrobot2_1100452.xacro'" />
+
+  <!-- Robot State Publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+    <param name="finalrobot2_1100452_description" value="$(param robot_descrifinalrobot2_1100452_descriptiontion)" />
+  </node>
+
+  <!-- Joint State Publisher -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen">
+    <param name="use_gui" value="true" />
+  </node>
+
+  <!-- Spawn the robot in Gazebo -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_dfinalrobot2_1100452_descriptionescription -urdf -model finalrobot2 -x $(arg x0) -y $(arg y0) -z $(arg z0)" output="screen"/>
+</launch>
