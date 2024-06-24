@@ -4,5 +4,10 @@ Title:clarn robot     1100452 仙洞田咲
 
 # Installation
 Download this ROS package.
-cd ~/catkin_ws/src
-git clone https://github.com/rt-net/raspimouse_sim.git
+```
+function hello(){
+   cd ~/catkin_ws/src
+   git clone https://github.com/rt-net/raspimouse_sim.git
+}
+```
+
