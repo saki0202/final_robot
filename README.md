@@ -41,5 +41,34 @@ rosdep install -r -y -i --from-paths raspimouse*
 ```
 
 
+## fusion360
 
+Using Fusion360, we created a robot modeled as a cleaning robot.
+![](messageImage_1719213936142.jpg)
+
+## moving with URG
+```
+roslaunch myrobot_1100452_description gazebo.launch
+```
 ![](./messageImage_1719205852679.jpg)
+
+## SLAM
+```
+# 1st terminal
+roslaunch raspimouse_gazebo raspimouse_with_willowgarage.launch
+```
+![](messageImage_1719215211154.jpg)
+
+```
+# 2nd terminal
+roslaunch raspimouse_ros_examples slam_gmapping.launch
+```
+![](messageImage_1719217825656.jpg)
+
+```
+# 3rd terminal
+roslaunch raspimouse_ros_examples teleop.launch key:=true mouse:=false
+```
+![](messageImage_1719221678069.jpg)
+
+
