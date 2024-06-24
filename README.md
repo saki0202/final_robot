@@ -5,9 +5,8 @@ Title:clarn robot     1100452 仙洞田咲
 # Installation
 Download this ROS package.
 ```
-function hello(){
    cd ~/catkin_ws/src
    git clone https://github.com/rt-net/raspimouse_sim.git
-}
-```
 
+```
+I used the Gazebo simulation environment provided by RT Corporation's GitHub repository Raspberry Pi Mouse Simulation Environment as a reference for my project. 
