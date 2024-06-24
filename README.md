@@ -40,3 +40,6 @@ git clone https://github.com/rt-net/raspimouse_description.git
 rosdep install -r -y -i --from-paths raspimouse*
 ```
 
+
+
+![](./messageImage_1719205852679.jpg)
