@@ -1,6 +1,7 @@
 # final_robot
-Title:clarn robot     1100452 仙洞田咲
-專題目標: 這個專題的目標是設計和建構一個能自動清掃特定房間或區域的機器人。該機器人將在避開障礙物的同時，高效地進行清掃。
+Title:clarn robot     1100452 仙洞田 咲(SAKI SENDODA)
+
+Project Goals:The goal of this project is to design and build a robot that can automatically clean specific rooms or areas. The robot will efficiently clean while avoiding obstacles.
 
 # Installation
 Download this ROS package.
@@ -10,3 +11,12 @@ Download this ROS package.
 
 ```
 I used the Gazebo simulation environment provided by RT Corporation's GitHub repository Raspberry Pi Mouse Simulation Environment as a reference for my project. 
+
+Download the dependent ROS packages.
+```
+cd ~/catkin_ws/src
+git clone https://github.com/ryuichiueda/raspimouse_ros_2.git
+git clone https://github.com/rt-net/raspimouse_description.git
+rosdep install -r -y -i --from-paths raspimouse*
+```
+
