@@ -53,6 +53,8 @@ roslaunch myrobot_1100452_description gazebo.launch
 ![](./messageImage_1719205852679.jpg)
 
 ## SLAM
+I used the Gazebo simulation environment provided by RT Corporation's GitHub repository this as a reference for my project. 
+https://github.com/rt-net/raspimouse_sim/blob/master/README.en.md
 ```
 # 1st terminal
 roslaunch raspimouse_gazebo raspimouse_with_willowgarage.launch
@@ -71,4 +73,17 @@ roslaunch raspimouse_ros_examples teleop.launch key:=true mouse:=false
 ```
 ![](messageImage_1719221678069.jpg)
 
+# existing gazebo × myrobot
+```
+roslaunch finalrobot2_1100452_description final.launch
+```
+image
+My robot has disappeared .....(´;ω;｀)!
 
+## speculation of the cause of the problem
+
+
+# Conclusion
+Connecting the robot I created with the existing Gazebo simulation environment was more difficult than expected. Despite spending a significant amount of time on this task, I ultimately couldn't complete it on time, which was very frustrating. Originally, I wanted to finish this part quickly and create a robot that could detect dirt like a vacuum cleaner. Although I couldn't complete this project successfully, I plan to dedicate time during the summer break to finish it. I enjoyed working on this project because it involved many techniques related to my graduation research.
+
+Through this project, I was able to deepen my knowledge of using ROS, Gazebo, and Fusion360. I also feel that my problem-solving skills improved when facing technical challenges. In the future, I want to find more efficient methods to progress my projects faster. I plan to leverage this experience for my graduation research and future career.
