@@ -77,10 +77,14 @@ roslaunch raspimouse_ros_examples teleop.launch key:=true mouse:=false
 ```
 roslaunch finalrobot2_1100452_description final.launch
 ```
-image
+<img src="messageImage_1719301131177.jpg" width="640px">
 My robot has disappeared .....(´;ω;｀)!
 
 ## speculation of the cause of the problem
+
+<img src="messageImage_1719273537517.jpg" width="320px"> When I check urdf.rviz, it seems that the robot's main body and the tires on both sides are not connected properly.
+
+<img src="messageImage_1719273537517.jpg" width="320px"> 
 
 
 # Conclusion
