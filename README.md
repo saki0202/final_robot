@@ -190,3 +190,13 @@ Despite following these steps, the issue persisted. Further investigation into t
 Connecting the robot I created with the existing Gazebo simulation environment was more difficult than expected. Despite spending a significant amount of time on this task, I ultimately couldn't complete it on time, which was very frustrating. Originally, I wanted to finish this part quickly and create a robot that could detect dirt like a vacuum cleaner. Although I couldn't complete this project successfully, I plan to dedicate time during the summer break to finish it. I enjoyed working on this project because it involved many techniques related to my graduation research.
 
 Through this project, I was able to deepen my knowledge of using ROS, Gazebo, and Fusion360. I also feel that my problem-solving skills improved when facing technical challenges. In the future, I want to find more efficient methods to progress my projects faster. I plan to leverage this experience for my graduation research and future career.
+
+
+# Reference
+https://github.com/rt-net/raspimouse_sim/blob/master/README.en.md
+
+https://cir-kit.github.io/blog/2015/02/15/gazebo-using-roslaunch/
+
+https://discourse.ros.org/t/fusion-360-tutorial-for-robotics/27036
+
+
