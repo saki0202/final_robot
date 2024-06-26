@@ -44,7 +44,8 @@ rosdep install -r -y -i --from-paths raspimouse*
 ## fusion360
 
 Using Fusion360, we created a robot modeled as a cleaning robot.
-![](messageImage_1719213936142.jpg)
+![image](https://github.com/saki0202/final_robot/assets/100355111/7dd7dd09-42f2-470b-9d34-e2c42a4e9374)
+
 
 ## moving with URG
 ```
